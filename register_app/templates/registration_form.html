@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}" />
+  </head>
+  <body>
+    <form method="post">
+      {% csrf_token %}
+      <label for="id_name">Name:</label>
+      {{ form.name }}
+      <div class="error">{{ form.name.errors }}</div>
+
+      <label for="id_email">Email:</label>
+      {{ form.email }}
+      <div class="error">{{ form.email.errors }}</div>
+
+      <label for="id_mobile_number">Mobile Number:</label>
+      {{ form.mobile_number }}
+      <div class="error">{{ form.mobile_number.errors }}</div>
+
+      <label for="id_gender">Gender:</label>
+      {{ form.gender }}
+      <div class="error">{{ form.gender.errors }}</div>
+
+      <label for="id_dob">Date of Birth:</label>
+      {{ form.dob }}
+      <div class="error">{{ form.dob.errors }}</div>
+
+      <label for="id_hobbies">Hobbies:</label>
+      {{ form.hobbies }}
+      <div class="error">{{ form.hobbies.errors }}</div>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
