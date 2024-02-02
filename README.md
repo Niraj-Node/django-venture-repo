@@ -42,7 +42,7 @@ Implement template inheritance to enhance code reusability and maintain a consis
 
 ### 1. Creating a Form in forms.py:
 
-In register_app/forms.py, you define a form using Django's built-in forms module.
+In register_form/forms.py, you define a form using Django's built-in forms module.
 
 ### 2. OOP Concepts in forms.py:
 
@@ -54,9 +54,9 @@ Composition: Forms can be composed of multiple fields, each serving a specific p
 
 ### 3. Handling Forms in Views:
 
-In register_app/views.py, you handle user input and validation.
+In register_form/views.py, you handle user input and validation (not done in that app).
 
 ### 4. Rendering HTML with Data:
 
 Render HTML pages in views with additional data processed from the form.
-In your HTML template (registration/register.html), you can access form fields like {{ form.username }}, {{ form.email }}, etc.
+In your HTML template (register.html), you can access form fields like {{ form.username }}, {{ form.email }}, etc.
