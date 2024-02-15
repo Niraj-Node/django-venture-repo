@@ -34,6 +34,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'calculator',
     'register_form',
+    'model_auth',
+    'bootstrap5',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -120,8 +122,9 @@ USE_TZ = True
 
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'register_form/static'),
-    os.path.join(BASE_DIR,'calculator/static'),
+    os.path.join(BASE_DIR,'calculator', 'static'),
+    os.path.join(BASE_DIR,'register_form', 'static'),
+    
 ]
 STATIC_URL = '/static/'
 
